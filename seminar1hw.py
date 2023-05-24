@@ -4,7 +4,7 @@
 n = input()
 print(int(n[0])+int(n[1])+int(n[2]))
 
-# 2 вариант
+# 2 вариантgit
 n = int(input())
 z = n % 10
 x = n // 100
