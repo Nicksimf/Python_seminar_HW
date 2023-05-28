@@ -3,23 +3,22 @@
 # В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 
 # V1. 
-# numbers = input().split()
-# x = input()
-# print(numbers.count(x))
+numbers = input().split()
+x = input()
+print(numbers.count(x))
 
-# # V2. 
-# n = int(input('Введите кол-во элементов списка: '))
-# s = input('Введите элементы списка: ').split()
-# # nums = list(map(int,s))
-# s2 = []
-# count = 0
-# for c in s:
-#     s2.append(int(c))
-# x = int(input('Введите искомое число: '))  
-# for i in range(n):
-#     if s2[i] == x:
-#         count += 1
-# print(count)
+# V2. 
+n = int(input('Введите кол-во элементов списка: '))
+s = input('Введите элементы списка: ').split()
+s2 = []
+count = 0
+for c in s:
+    s2.append(int(c))
+x = int(input('Введите искомое число: '))  
+for i in range(n):
+    if s2[i] == x:
+        count += 1
+print(count)
 
 
 # Задача 18: Требуется найти в списке A самый близкий по величине элемент к заданному числу X. 
