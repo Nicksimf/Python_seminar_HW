@@ -2,21 +2,24 @@
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
 # В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 
-V1. 
-numbers = input().split()
-x = input()
-print(numbers.count(x))
+# V1. 
+# numbers = input().split()
+# x = input()
+# print(numbers.count(x))
 
-V2. 
-n = int(input('Введите кол-во элементов списка: '))
-s = input('Введите элементы списка: ').split()
-nums = list(map(int,s))
-count = 0
-x = int(input('Введите искомое число: '))  
-for i in range(n):
-    if nums[i] == x:
-        count += 1
-print(count)
+# # V2. 
+# n = int(input('Введите кол-во элементов списка: '))
+# s = input('Введите элементы списка: ').split()
+# # nums = list(map(int,s))
+# s2 = []
+# count = 0
+# for c in s:
+#     s2.append(int(c))
+# x = int(input('Введите искомое число: '))  
+# for i in range(n):
+#     if s2[i] == x:
+#         count += 1
+# print(count)
 
 
 # Задача 18: Требуется найти в списке A самый близкий по величине элемент к заданному числу X. 
@@ -25,14 +28,16 @@ print(count)
 
 n = int(input('Введите кол-во элементов списка: '))
 s = input('Введите элементы списка: ').split()
-nums = list(map(int,s))
+s2 = []
+for c in s:
+    s2.append(int(c))
 
 x = int(input('Введите число для сравнения: '))
-min = abs(x - nums[0])
+min = abs(x - s2[0])
 index = 0
 for i in range(1, n):
-    count = abs(x - nums[i])
+    count = abs(x - s2[i])
     if count < min:
-    min = count
-    index = i
-print(f'Число {nums[index]} в списке n наиболее близко по величине к числу {x}, их разница составляет {abs(x - nums[index])}')
+        min = count
+        index = i
+print(f'Число {s2[index]} в списке n наиболее близко по величине к числу {x}, их разница составляет {abs(x - s2[index])}')
